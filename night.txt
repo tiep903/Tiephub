@@ -1600,8 +1600,10 @@ spawn(function()
 end)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tiep2010/Tiephub/main/night.txt"))()
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Nghiavndeptraivcc/Orion-nhu-cut/main/Orion.Source')))()
+
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Tiep2010/Tiephub/main/night.txt"))()
 local Window = OrionLib:MakeWindow({
     Name = "Night Hub", 
     HidePremium = false,
