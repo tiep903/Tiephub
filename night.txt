@@ -1,4 +1,4 @@
-No Skid
+-No Skid
 if game.PlaceId == 2753915549 then
     taodangosea1 = true
 elseif game.PlaceId == 4442272183 then
