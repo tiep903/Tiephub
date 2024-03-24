@@ -5,18 +5,18 @@ ____  _              _____ _     _   ____
  ___) | |  __/ |_| |   | | | | | | |  ___) | |_) | (_| | (_|  __/
 |____/|_|\___|\__,_|   |_| |_| |_|_| |____/| .__/ \__,_|\___\___|
                                            |_|                                         
-Siêu Th Space Cm Õn Bn Ð Tin Týng Và S Dng Dch V Ca Chúng Tôi, Nu Thy Hu Ít Hy Chia S Cho Bn Bè Ca Bn !!
-- Website: ang Cp Nht
-- Page: Có Con Cc
-- Facebook Admin: https://www.facebook.com/tiep.luong.5477272?mibextid=JRoKGi
+Siï¿½u Th Space Cm ï¿½n Bn ï¿½ Tin Tï¿½ng Vï¿½ S Dng Dch V Ca Chï¿½ng Tï¿½i, Nu Thy Hu ï¿½t Hy Chia S Cho Bn Bï¿½ Ca Bn !!
+- Website: sieuthispace.xyz
+- Page: fb.com/sieuthispace
+- Facebook Admin: fb.com/minhtien.dino Hoc fb.com/nguyentiendino
 
---// Lýu :
-- Không Ðýc Share Hay Crack M Ngun Này Cho Ai! Nu Không Bn S B Ban IP Khi Website Vnh Vin!
-- Chúng Tôi Không Nhn H Tr Nhng M Ngun Min Phí, Xin Ðng Bo V Sao. To Ticket H Tr Ca Website Ti: https://dash.sieuthispace.xyz/client/ticket
-- Nu Bn Edit Source Và Up Web Share Nh Obfuscate Script. Nu Bn Có Tin Th S Dng: Lura.Ph, Luarmor.Net | Nu Bn Không Có Tin Th Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
+--// Lï¿½u :
+- Khï¿½ng ï¿½ï¿½c Share Hay Crack M Ngun Nï¿½y Cho Ai! Nu Khï¿½ng Bn S B Ban IP Khi Website Vnh Vin!
+- Chï¿½ng Tï¿½i Khï¿½ng Nhn H Tr Nhng M Ngun Min Phï¿½, Xin ï¿½ng Bo V Sao. To Ticket H Tr Ca Website Ti: https://dash.sieuthispace.xyz/client/ticket
+- Nu Bn Edit Source Vï¿½ Up Web Share Nh Obfuscate Script. Nu Bn Cï¿½ Tin Th S Dng: Lura.Ph, Luarmor.Net | Nu Bn Khï¿½ng Cï¿½ Tin Th Dï¿½ng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhï¿½!
 ]]
 ---///--------------------------------------------------------------\\\---
-Ðãng Bi Phucdz
+ï¿½ï¿½ng Bi Phucdz
 -- No Skid
 if game.PlaceId == 2753915549 then
     taodangosea1 = true
