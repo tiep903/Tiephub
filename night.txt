@@ -1,23 +1,4 @@
---[[  
-____  _              _____ _     _   ____                       
-/ ___|(_) ___ _   _  |_   _| |__ (_) / ___| _ __   __ _  ___ ___ 
-\___ \| |/ _ \ | | |   | | | '_ \| | \___ \| '_ \ / _` |/ __/ _ \
- ___) | |  __/ |_| |   | | | | | | |  ___) | |_) | (_| | (_|  __/
-|____/|_|\___|\__,_|   |_| |_| |_|_| |____/| .__/ \__,_|\___\___|
-                                           |_|                                         
-Si�u Th Space Cm �n Bn � Tin T�ng V� S Dng Dch V Ca Ch�ng T�i, Nu Thy Hu �t Hy Chia S Cho Bn B� Ca Bn !!
-- Website: sieuthispace.xyz
-- Page: fb.com/sieuthispace
-- Facebook Admin: fb.com/minhtien.dino Hoc fb.com/nguyentiendino
-
---// L�u :
-- Kh�ng ��c Share Hay Crack M Ngun N�y Cho Ai! Nu Kh�ng Bn S B Ban IP Khi Website Vnh Vin!
-- Ch�ng T�i Kh�ng Nhn H Tr Nhng M Ngun Min Ph�, Xin �ng Bo V Sao. To Ticket H Tr Ca Website Ti: https://dash.sieuthispace.xyz/client/ticket
-- Nu Bn Edit Source V� Up Web Share Nh Obfuscate Script. Nu Bn C� Tin Th S Dng: Lura.Ph, Luarmor.Net | Nu Bn Kh�ng C� Tin Th D�ng: luaobfuscate.com, MoonSec, 77Fuscate,... Nh�!
-]]
----///--------------------------------------------------------------\\\---
-��ng Bi Phucdz
--- No Skid
+No Skid
 if game.PlaceId == 2753915549 then
     taodangosea1 = true
 elseif game.PlaceId == 4442272183 then
