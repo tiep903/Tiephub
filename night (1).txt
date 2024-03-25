@@ -1,63 +1,26 @@
---[[  
-____  _              _____ _     _   ____                       
-/ ___|(_) ___ _   _  |_   _| |__ (_) / ___| _ __   __ _  ___ ___ 
-\___ \| |/ _ \ | | |   | | | '_ \| | \___ \| '_ \ / _` |/ __/ _ \
- ___) | |  __/ |_| |   | | | | | | |  ___) | |_) | (_| | (_|  __/
-|____/|_|\___|\__,_|   |_| |_| |_|_| |____/| .__/ \__,_|\___\___|
-                                           |_|                                         
-Siêu Th Space Cm Õn Bn Ð Tin Týng Và S Dng Dch V Ca Chúng Tôi, Nu Thy Hu Ít Hy Chia S Cho Bn Bè Ca Bn !!
-- Website: sieuthispace.xyz
-- Page: fb.com/sieuthispace
-- Facebook Admin: fb.com/minhtien.dino Hoc fb.com/nguyentiendino
-
---// Lýu :
-- Không Ðýc Share Hay Crack M Ngun Này Cho Ai! Nu Không Bn S B Ban IP Khi Website Vnh Vin!
-- Chúng Tôi Không Nhn H Tr Nhng M Ngun Min Phí, Xin Ðng Bo V Sao. To Ticket H Tr Ca Website Ti: https://dash.sieuthispace.xyz/client/ticket
-- Nu Bn Edit Source Và Up Web Share Nh Obfuscate Script. Nu Bn Có Tin Th S Dng: Lura.Ph, Luarmor.Net | Nu Bn Không Có Tin Th Dùng: luaobfuscate.com, MoonSec, 77Fuscate,... Nhé!
-]]
----///--------------------------------------------------------------\\\---
-Ðãng Bi Phucdz
--- No Skid
 if game.PlaceId == 2753915549 then
-    taodangosea1 = true
+    RosieTeam1 = true
 elseif game.PlaceId == 4442272183 then
-    taodangosea2 = true
+    RosieTeam2 = true
 elseif game.PlaceId == 7449423635 then
-    taodangosea3 = true
+    RosieTeam3 = true
 else
     game.Players.LocalPlayer:Kick("Bro, My Script Support Only Blox Fruits and Please Wait Me Update New Game")
 end
 
--- Join Teams :
-
-if game.Players.LocalPlayer.PlayerGui.Main:FindFirstChild("ChooseTeam") then
-    for i, v in pairs(
-        getconnections(
-            game:GetService("Players").LocalPlayer.PlayerGui.Main.ChooseTeam.Container.Pirates.Frame.TextButton.Activated
-        )
-    ) do
-        for a, b in pairs(getconnections(game:GetService("UserInputService").TouchTapInWorld)) do
-            b:Fire()
-        end
-        v.Function()
-    end
-end
-
--- tumlumtala :
-
-if taodangosea1 then
+if RosieTeam1 then
     Maretialslist = {"Angel Swings", "Leather", "Magma Ore", "Scrap Metal", "Yeti Fur", "Fish Tail"}
-elseif taodangosea2 then
+elseif RosieTeam2 then
     Maretialslist = {"Magma Ore", "Ectoplasm", "Mistic Droplet", "Radioactive Material", "Vampire Fang"}
-elseif taodangosea3 then
+elseif RosieTeam3 then
     Maretialslist = {"Fish Tail", "Gunpowder", "Mini Tusk", "Conjured Cocoa", "Dragon Scale"}
 end
 
-if taodangosea1 then
+if RosieTeam1 then
     BossList = {"The Gorilla King","Bobby","Yeti","Mob Leader","Vice Admiral","Warden","Chief Warden","Swan","Magma Admiral","Fishman Lord","Wysper","Thunder God","Cyborg","Saber Expert"}
-elseif taodangosea2 then
+elseif RosieTeam2 then
     BossList = {"Diamond","Jeremy","Fajita","Don Swan","Smoke Admiral","Cursed Captain","Darkbeard","Order","Awakened Ice Admiral","Tide Keeper"}
-elseif taodangosea3 then
+elseif RosieTeam3 then
     BossList = {"Stone","Island Empress","Kilo Admiral","Captain Elephant","Beautiful Pirate","rip_indra True Form","Longma","Soul Reaper","Cake Queen"}
 end
 
@@ -65,7 +28,7 @@ end
 
 function Checknhiemvu()
     YourLevel = game: GetService("Players").LocalPlayer.Data.Level.Value
-    if taodangosea1 then
+    if RosieTeam1 then
         if YourLevel == 1 or YourLevel <= 9 then
             Mob = "Bandit"
             NumberQuest = 1
@@ -261,7 +224,7 @@ function Checknhiemvu()
             CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
             CFrameMob = CFrame.new(5441.95166015625, 42.50205993652344, 4950.09375)
             end
-            elseif taodangosea2 then
+            elseif RosieTeam2 then
             if YourLevel == 700 or YourLevel <= 724 then
             Mob = "Raider"
             NumberQuest = 1
@@ -432,7 +395,7 @@ function Checknhiemvu()
             CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
             CFrameMob = CFrame.new(-3352.9013671875, 285.01556396484375, -10534.841796875)
             end
-            elseif taodangosea3 then
+            elseif RosieTeam3 then
             if YourLevel == 1500 or YourLevel <= 1524 then
             Mob = "Pirate Millionaire"
             NumberQuest = 1
@@ -683,7 +646,7 @@ function Checknhiemvu()
 end
 
 function CheckBoss()
-    if taodangosea1 then
+    if RosieTeam1 then
         if getgenv().SelectBoss == "The Gorilla King" then
             Boss = "The Gorilla King"
             NameBoss = 'The Gorrila King'
@@ -789,7 +752,7 @@ function CheckBoss()
             CFrameBoss = CFrame.new(-5081.3452148438, 85.221641540527, 4257.3588867188)
         end
     end
-    if taodangosea2 then
+    if RosieTeam2 then
         if getgenv().SelectBoss == "Diamond" then
             Boss = "Diamond"
             NameBoss = 'Diamond'
@@ -850,7 +813,7 @@ function CheckBoss()
             CFrameBoss = CFrame.new(-6217.2021484375, 28.047645568848, -5053.1357421875)
         end
     end
-    if taodangosea3 then
+    if RosieTeam3 then
         if getgenv().SelectBoss == "Stone" then
         Boss = "Stone"
         NameBoss = 'Stone'
@@ -915,10 +878,10 @@ function CheckMaterials()
     elseif _G.SelectMaterials == "Leather" then
         Mob = {"Pirate", "Brute"}
     elseif _G.SelectMaterials == "Magma Ore" then
-        if taodangosea1 then
+        if RosieTeam1 then
             Mob = {"Military Soldier", "Military Spy"}
         end
-        if taodangosea2 then
+        if RosieTeam2 then
             Mob = {"Magma Admiral", "Magma Ninja", "Lava Pirate"}
         end
     elseif _G.SelectMaterials == "Scrap Metal" then
@@ -928,10 +891,10 @@ function CheckMaterials()
     elseif _G.SelectMaterials == "Ectoplasm" then
         Mob = {"Ship Deckhand", "Ship Engineer ", "Ship Steward", "Ship Officer", "Cursed Captain"}
     elseif _G.SelectMaterials == "Fish Tail" then
-        if taodangosea1 then
+        if RosieTeam1 then
             Mob = {"Fishman Commando", "Fishman Warrior"}
         end
-        if taodangosea3 then
+        if RosieTeam3 then
             Mob = {"Fishman Raider", "Fishman Captain"}
         end
     elseif _G.SelectMaterials == "Gunpowder" then
@@ -2083,7 +2046,7 @@ local Section = LC:AddSection({
 	Name = "Islands"
 })
 
-if taodangosea1 then
+if RosieTeam1 then
     LC:AddDropdown({
     Name = "Select Island",
     Default = "",
@@ -2113,7 +2076,7 @@ if taodangosea1 then
 })
 
 end
-if taodangosea2 then
+if RosieTeam2 then
     LC:AddDropdown({
     Name = "Select Island",
     Default = "",
@@ -2141,7 +2104,7 @@ if taodangosea2 then
 })
 end
 
-if taodangosea3 then
+if RosieTeam3 then
 LC:AddDropdown({
     Name = "Select Island",
     Default = "",
@@ -2337,7 +2300,7 @@ local Section = RC:AddSection({
 RC:AddButton({
 	Name = "Teleport To Top On Great Tree",
 	Callback = function()
-        if taodangosea3 then
+        if RosieTeam3 then
             TweenTopOnGreatTree()
         end
   	end    
@@ -2346,7 +2309,7 @@ RC:AddButton({
 RC:AddButton({
 	Name = "Teleport To Templete Of Time",
 	Callback = function()
-        if taodangosea3 then
+        if RosieTeam3 then
             TweenTemplete()
         end
   	end    
@@ -2355,7 +2318,7 @@ RC:AddButton({
 RC:AddButton({
 	Name = "Teleport To Doors Trials",
 	Callback = function()
-        if taodangosea3 then
+        if RosieTeam3 then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude > 1000 then
                 TweenTemplete()
             elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude < 1000 then
@@ -2387,7 +2350,7 @@ RC:AddButton({
 RC:AddButton({
 	Name = "Teleport To Anclient One",
 	Callback = function()
-        if taodangosea3 then
+        if RosieTeam3 then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude > 1000 then
                 TweenTemplete()
             elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude < 1000 then
@@ -2401,7 +2364,7 @@ RC:AddButton({
 RC:AddButton({
 	Name = "Teleport To Clock",
 	Callback = function()
-        if taodangosea3 then
+        if RosieTeam3 then
             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude > 1000 then
                 TweenTemplete()
             elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PosTemplete.Position).Magnitude < 1000 then
@@ -2474,7 +2437,7 @@ end)
 
 spawn(function()
     while wait() do
-        if _G.StartFarm == true and _G.SelectFarm == "Katakuri" and taodangosea3 then
+        if _G.StartFarm == true and _G.SelectFarm == "Katakuri" and RosieTeam3 then
             pcall(function()
                 local spawnerData = game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner")
                 local dataLength = string.len(spawnerData)
@@ -2951,7 +2914,7 @@ end)
 local PoleBossPos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.898681640625)
 spawn(function()
     while wait() do
-        if _G.AutoPole and taodangosea1 then
+        if _G.AutoPole and RosieTeam1 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Thunder God") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3120,7 +3083,7 @@ local PosCursedBoss = CFrame.new(913.893311, 187.405502, 33598.7578)
 local PosGhoulRace = CFrame.new(923.748596, 125.529785, 33454.4883)
 spawn(function()
     while wait() do
-        if _G.AutoGhoulRace and taodangosea2 then
+        if _G.AutoGhoulRace and RosieTeam2 then
             pcall(function()
                 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Hellfire Torch") then
                     if BypassTP then
@@ -3272,7 +3235,7 @@ end)
 local CastlePos = CFrame.new(-5496.17432, 313.768921, -2841.53027)
 spawn(function()
     while wait() do
-        if _G.AutoCastleRaid and taodangosea3 then
+        if _G.AutoCastleRaid and RosieTeam3 then
             pcall(function()
                 if (PosRaidCastle.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 500 then
                     for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3307,7 +3270,7 @@ end)
 
 spawn(function()
     while task.wait() do
-        if _G.AutoFactory and taodangosea2 then
+        if _G.AutoFactory and RosieTeam2 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Core") then
                     for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3344,7 +3307,7 @@ end)
 
 spawn(function()
     while task.wait() do
-        if _G.AutoElite and taodangosea3 then
+        if _G.AutoElite and RosieTeam3 then
             pcall(function()
                 if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                     if string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Diablo") or string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Deandre") or string.find(game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Container.QuestTitle.Title.Text,"Urban") then
@@ -3424,9 +3387,9 @@ spawn(function()
             pcall(function()
                 if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Special Microchip") and not game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == true then
                     if not game:GetService("Workspace")["_WorldOrigin"].Locations:FindFirstChild("Island 1") and game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Special Microchip") or game:GetService("Players").LocalPlayer.Character:FindFirstChild("Special Microchip") then
-                        if taodangosea2 then
+                        if RosieTeam2 then
                             fireclickdetector(game:GetService("Workspace").Map.CircleIsland.RaidSummon2.Button.Main.ClickDetector)
-                        elseif taodangosea3 then
+                        elseif RosieTeam3 then
                             fireclickdetector(game:GetService("Workspace").Map["Boat Castle"].RaidSummon2.Button.Main.ClickDetector)
                         end
                     end
@@ -3439,7 +3402,7 @@ end)
 local PosJungle = CFrame.new(-1612.55884, 36.9774132, 148.719543)
 spawn(function()
     while wait() do
-        if _G.AutoSaber and game.Players.LocalPlayer.Data.Level.Value >= 200 and taodangosea1 then
+        if _G.AutoSaber and game.Players.LocalPlayer.Data.Level.Value >= 200 and RosieTeam1 then
             pcall(function()
                 if game:GetService("Workspace").Map.Jungle.Final.Part.Transparency == 0 then
                     if game:GetService("Workspace").Map.Jungle.QuestPlates.Door.Transparency == 0 then
@@ -3759,7 +3722,7 @@ end)
 local PosGreybeard = CFrame.new(-4881.23095703125, 22.65204429626465, 4273.75244140625)
 spawn(function()
     while wait() do
-        if _G.AutoGreybeard and taodangosea1 then
+        if _G.AutoGreybeard and RosieTeam1 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Greybeard") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3876,7 +3839,7 @@ end)
 
 spawn(function()
     while wait() do
-        if _G.AutoRipIndra and taodangosea3 then
+        if _G.AutoRipIndra and RosieTeam3 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("rip_indra True Form") or game:GetService("Workspace").Enemies:FindFirstChild("rip_indra") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3914,7 +3877,7 @@ end)
 
 spawn(function()
     while wait() do
-        if _G.AutoDarkbeard and taodangosea2 then
+        if _G.AutoDarkbeard and RosieTeam2 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("Darkbeard") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
@@ -3949,7 +3912,7 @@ spawn(function()
     while wait() do
         if _G.AutoThirdSea then
             pcall(function()
-                if game:GetService("Players").LocalPlayer.Data.Level.Value >= 1500 and taodangosea2 then
+                if game:GetService("Players").LocalPlayer.Data.Level.Value >= 1500 and RosieTeam2 then
                     if game:GetService("ReplicatedStorage").Remotes["CommF_"]:InvokeServer("ZQuestProgress", "General") == 0 then
                         Tween(CFrame.new(-1926.3221435547, 12.819851875305, 1738.3092041016))
                         if (CFrame.new(-1926.3221435547, 12.819851875305, 1738.3092041016).Position - game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 10 then
@@ -3986,7 +3949,7 @@ end)
 local PosSaw = CFrame.new(-687.616638, 13.8629713, 1580.74951)
 spawn(function()
     while wait() do
-        if _G.AutoSaw and taodangosea1 then
+        if _G.AutoSaw and RosieTeam1 then
             pcall(function()
                 if game:GetService("Workspace").Enemies:FindFirstChild("The Saw") then
                     for i, v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
