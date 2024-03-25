@@ -1634,7 +1634,7 @@ local Section = I:AddSection({
 	Name = "Info Owner"
 })
 
-I:AddLabel("Owner : ! NightX")
+I:AddLabel("Owner : ! Banana Hub")
 I:AddLabel("Best Brothers : ! DestroyX & T...")
 I:AddLabel("Best Friends : House Of Blance")
 I:AddLabel("Dev : I Am Alone...")
@@ -1753,8 +1753,8 @@ local Section = G:AddSection({
 
 G:AddDropdown({
 	Name = "Select Farm",
-	Default = "Level",
-	Options = {"Level", "Katakuri", "Bone"},
+	Default = "Cày Cấp Độ",
+	Options = {"Cày Cấp Độ", "Đánh Kata", "Cày Xương"},
 	Callback = function(Value)
 		_G.SelectFarm = Value
 	end    
