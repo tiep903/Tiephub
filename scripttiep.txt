@@ -13,17 +13,17 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main Farm", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting Farming", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "cherry" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Buy Items", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Miscellaneous", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
+    Main = Window:AddTab({ Title = "Chế Dộ Đánh", Icon = "home" }),
+    Setting = Window:AddTab({ Title = "Cài Đặt Settings", Icon = "settings" }),
+    Stats = Window:AddTab({ Title = "Bắt Đầu", Icon = "plus-circle" }),
+    Player = Window:AddTab({ Title = "Người Chơi", Icon = "baby" }),
+    Teleport = Window:AddTab({ Title = "Di Chuyển", Icon = "palmtree" }),
+    Fruit = Window:AddTab({ Title = "Trái Cây", Icon = "cherry" }),
+    Raid = Window:AddTab({ Title = "Đột Kích", Icon = "swords" }),
+    Race = Window:AddTab({ Title = "Tộc V4", Icon = "chevrons-right" }),
+    Shop = Window:AddTab({ Title = "Mua Hàng", Icon = "shopping-cart" }),
+	Misc = Window:AddTab({ Title = "Khác", Icon = "list-plus" }),
+    Hop = Window:AddTab({ Title = "Nhảy", Icon = "wifi" }),
 }
 local Options = Fluent.Options
 do
@@ -3047,7 +3047,7 @@ end)
 --Mastery
 local Mastery = Tabs.Main:AddSection("Mastery Farm")
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
-        Title = "Mastery Mode",
+        Title = "Chế độ làm chủ",
         Values = {"Level","Near Mobs",},
         Multi = false,
         Default = 1,
@@ -3059,7 +3059,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
         TypeMastery = Value
     end)
 
-    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
+    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Cày Thông Thạo", Default = false })
     ToggleMasteryFruit:OnChanged(function(Value)
         AutoFarmMasDevilFruit = Value
     end)
@@ -3068,7 +3068,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
  
 
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
-        Title = "Health (%) Mob",
+        Title = "% Lượng Máu Quái",
         Description = "",
         Default = 25,
         Min = 0,
@@ -3354,7 +3354,7 @@ spawn(function()
 end
 
     if Second_Sea then
-    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Default = false })
+    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Tự động ngoại chất", Default = false })
     ToggleVatChatKiDi:OnChanged(function(Value)
         _G.Ectoplasm = Value
     end)
