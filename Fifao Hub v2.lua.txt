@@ -2653,7 +2653,7 @@ end)
     end)
 
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
+    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Level(Cày Level)", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
