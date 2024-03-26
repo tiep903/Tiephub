@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
@@ -2794,7 +2794,7 @@ end)
 
 
 
-    local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
+    local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "=>Đột kích lâu đài tự động | Lâu đài cướp biển", Default = false })
     ToggleCastleRaid:OnChanged(function(Value)
         _G.CastleRaid = Value
     end)
@@ -2911,7 +2911,7 @@ function TPchest(P1)
 
 
 if Third_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "=>Cày Rương(Tự Động Dừng TP)", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea3 = Value
 end)
@@ -2919,14 +2919,14 @@ Options.ToggleChest:SetValue(false)
 end
 
 if Second_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Cày Rương(Tự Động Dừng TP)", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea2 = Value
 end)
 Options.ToggleChest:SetValue(false)
 end
 
-local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
+local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "Cày Rương(Di Chuyển)", Default = false })
 ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
 end)
@@ -2965,7 +2965,7 @@ end)
 
 
       Tabs.Main:AddButton({
-        Title = "Redeem All Code",
+        Title = "Nhập Tất Cả Code",
         Description = "Redeem all code x2 exp",
         Callback = function()
             UseCode()
@@ -2994,7 +2994,7 @@ end)
 
 
     Tabs.Main:AddButton({
-        Title = "Fps Booster",
+        Title = "Tăng cường khung hình / giây",
         Description = "Boost your fps",
         Callback = function()
             FPSBooster()
