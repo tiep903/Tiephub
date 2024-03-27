@@ -1,11 +1,11 @@
-----------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "Con Cặc Hub",
-    SubTitle = "Version 2",
+    Title = "Tiệp Hub",
+    SubTitle = "By Lương Văn Tiệp",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = false,
@@ -13,15 +13,15 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main Farm", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Setting Farming", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Devil Fruit", Icon = "cherry" }),
-    Raid = Window:AddTab({ Title = "Raid", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Buy Items", Icon = "shopping-cart" }),
+    Main = Window:AddTab({ Title = "=> Chính", Icon = "home" }),
+    Setting = Window:AddTab({ Title = "=> Cài Đặt Đánh", Icon = "settings" }),
+    Stats = Window:AddTab({ Title = "=> TĐ Nâng Chỉ Số", Icon = "plus-circle" }),
+    Player = Window:AddTab({ Title = "=> Người Chơi", Icon = "baby" }),
+    Teleport = Window:AddTab({ Title = "=> Di Chuyển", Icon = "palmtree" }),
+    Fruit = Window:AddTab({ Title = "=> Trái Cây", Icon = "cherry" }),
+    Raid = Window:AddTab({ Title = "Đột Kích", Icon = "swords" }),
+    Race = Window:AddTab({ Title = "Tộc V4", Icon = "chevrons-right" }),
+    Shop = Window:AddTab({ Title = "Mua Items", Icon = "shopping-cart" }),
 	Misc = Window:AddTab({ Title = "Miscellaneous", Icon = "list-plus" }),
     Hop = Window:AddTab({ Title = "Hop", Icon = "wifi" }),
 }
@@ -2653,7 +2653,7 @@ end)
     end)
 
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Level(Cày Level)", Default = false })
+    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "=>Cày Level✅️", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -2714,7 +2714,7 @@ end)
 
 
 
-        local ToggleCandy = Tabs.Main:AddToggle("ToggleCandy", {Title = "Auto Candy Event New 😍😍", Default = false })
+        local ToggleCandy = Tabs.Main:AddToggle("ToggleCandy", {Title = "=>Tự Động Làm NV Kẹo😍😍", Default = false })
         ToggleCandy:OnChanged(function(Value)
            _G.AutoCandy = Value
         end)
@@ -2755,7 +2755,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Kill Near | Mob Aura", Default = false })
+    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "=> Đánh Quái Gần", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)
@@ -2794,7 +2794,7 @@ end)
 
 
 
-    local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
+    local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "=> Đánh Hải Tặc ", Default = false })
     ToggleCastleRaid:OnChanged(function(Value)
         _G.CastleRaid = Value
     end)
@@ -2911,7 +2911,7 @@ function TPchest(P1)
 
 
 if Third_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "=> Fam Rương Tự Dừng Nếu Có Vật Phẩm[TP]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea3 = Value
 end)
@@ -2919,14 +2919,14 @@ Options.ToggleChest:SetValue(false)
 end
 
 if Second_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "=> Fam Rương Tự Dừng Nếu Có Vật Phẩm[TP]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea2 = Value
 end)
 Options.ToggleChest:SetValue(false)
 end
 
-local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
+local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "=> Nhặt Rương[Di Chuyển]", Default = false })
 ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
 end)
@@ -2965,7 +2965,7 @@ end)
 
 
       Tabs.Main:AddButton({
-        Title = "Redeem All Code",
+        Title = "=> Nhập Tất Cả Code",
         Description = "Redeem all code x2 exp",
         Callback = function()
             UseCode()
@@ -2990,11 +2990,20 @@ end)
     UseCode("Axiore")
     UseCode("TantaiGaming")
     UseCode("STRAWHATMAINE")
-
+    UseCode("NEWTROLL")
+    UseCode("SECRET_ADMIN")
+    UseCode("KITT_RESET")
+    UseCode("JULYUPDATE_RESET")
+    UseCode("staffbattle")
+    UseCode("Sub2CaptainMaui")
+    UseCode("SUB2GAMERROBOT_RESET1")
+    UseCode("KittGaming")
+    
+    
 
 
     Tabs.Main:AddButton({
-        Title = "Fps Booster",
+        Title = "=> Giảm Lag[Xóa Đồ Họa]",
         Description = "Boost your fps",
         Callback = function()
             FPSBooster()
@@ -3045,7 +3054,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
-local Mastery = Tabs.Main:AddSection("Mastery Farm")
+local Mastery = Tabs.Main:AddSection("=> Cày Thông Thạo")
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
         Title = "Mastery Mode",
         Values = {"Level","Near Mobs",},
@@ -3068,7 +3077,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
  
 
     local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
-        Title = "Health (%) Mob",
+        Title = "=> Chọn % Lượng Máu Quái",
         Description = "",
         Default = 25,
         Min = 0,
